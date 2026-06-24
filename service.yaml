@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+
+metadata:
+  name: task22-service
+
+spec:
+  selector:
+    app: task22-app
+
+  ports:
+  - port: 80
+    targetPort: 3000
+
+  type: NodePort
